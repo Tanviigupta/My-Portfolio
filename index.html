@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanvi Gupta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da19536a9f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="preloader"></div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png"  alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav> 
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Tanvi</span> Gupta<br>From India.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------About-section------------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/myphoto.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello! I’m Tanvi Gupta, a proficient Front-End Developer recently graduated with<br> a bachelor’s degree in Electronics and Communication from RKGIT College. With expertise in HTML, CSS, JavaScript and React, I have crafted several projects that showcase my ability to develop dynamic and responsive web applications.<br> In addition to my front-end expertise, I have expanded my skill set to include<br> Python, focusing on data science libraries and AI/ML. I’ve applied these skills in developing various projects, such as  chatbot and a plagiarism checker.<br>  I am eager to embark on my career in web development, where I can apply my diverse skills, continue to grow, and collaborate with talented teams. Let’s connect and explore how we can create innovative web solutions together.
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Responsive Websites and Web Application Development.</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces.</li>
+                            <li><span>Python</span><br>Python with OOPs concepts, Data Science libraries and AI/ML.</li>
+                            <li><span>DBMS/MySQL</span><br>Database management with MySQL.</li>
+                        </ul>
+                    </div> <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Aug2023 - Sept2023</span><br>Web Design Intern at Bharat Intern Pvt. Ltd.</li>
+                            <li><span>Apr2023 - May2023</span><br>IOT & Computer vision at The Sparks Foundation Pvt. Ltd.</li>
+                        </ul>
+                    </div> <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>B.Tech with ECE From Rkgit, Ghaziabad.</li>
+                            <li><span>2020</span><br>Intermediate with Science Stream From St. Mary's christian school, Ghaziabad.  </li>
+                            <li><span>2018</span><br>Matriculation From  St. Mary's christian school, Ghaziabad.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             
+             </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!-- --------------------------------services-------------------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I offer a range of services to build a new website from scratch, revamp existing ones, or develop custom web applications.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>I craft user experiences that are both visually stunning and intuitively designed, ensuring an exceptional user experience.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>I design and develop robust and scalable applications tailored to meet both enterprise and mobile needs.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Python for AI/ML</h2>
+                <p>I offer a range of services leveraging Python’s versatility and its extensive libraries and tools for diverse data science and AI/ML applications.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------------------projects-------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/p1.png" alt="">
+                <div class="layer">
+                    <h3>Object Detector</h3>
+                    <p>An object detector identifies and locates objects in images or videos using bounding boxes.</p>
+                    <a href="https://github.com/Tanviigupta/Object-Detection"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p2.png" alt="">
+                <div class="layer">
+                    <h3>Netflix Clone</h3>
+                    <p> A Netflix Homepage Clone.</p>
+                    <a href="https://github.com/Tanviigupta/Netflix-Landing-page"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p3.png" alt="">
+                <div class="layer">
+                    <h3>Number guessing game</h3>
+                    <p>A guessing game where players guess a number between 1 and 100 in 10 tries with feedback.</p>
+                    <a href="https://github.com/Tanviigupta/Simple-Guessing-game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p4.png" alt="">
+                <div class="layer">
+                    <h3>Chatbot</h3>
+                    <p>Implemented a chatbot with pattern-response pairs for mental health support.</p>
+                    <a href="https://github.com/Tanviigupta/Chatbot"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Tanviigupta?tab=repositories" class="btn">See more</a>
+    </div>
+ </div>
+
+ <!-- --------------------------contact------------------------------- -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p> <i class="fa-regular fa-paper-plane"></i>tanvig477@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+919953560680</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/tanvi-gupta13/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Tanviigupta/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/_tishamittal_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:tanvig477@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="test" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Tanvi Gupta.<i class="fa-solid fa-heart"></i></p>
+    </div>
+    
+  </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+     <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+     </script>
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxf1T1FfuI9ibxHfndYSz1-xtuaKokO4yFG2SVOzE1nXr_07eIizEvxSOis4YVrswit/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+        $('#preloader'). delay(350). fadeOut('slow');
+      </script>
+</body>
+</html>
